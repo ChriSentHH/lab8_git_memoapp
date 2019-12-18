@@ -19,6 +19,7 @@
 		8325FAEE23A9D41F00E7944D /* newuser_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FAEB23A9D41F00E7944D /* newuser_ViewController.swift */; };
 		8325FAEF23A9D41F00E7944D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FAEC23A9D41F00E7944D /* SwiftUIView.swift */; };
 		8325FAF023A9D41F00E7944D /* main_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FAED23A9D41F00E7944D /* main_ViewController.swift */; };
+		8325FAF623A9F30100E7944D /* login_SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FAF523A9F30100E7944D /* login_SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8325FAEB23A9D41F00E7944D /* newuser_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newuser_ViewController.swift; sourceTree = "<group>"; };
 		8325FAEC23A9D41F00E7944D /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		8325FAED23A9D41F00E7944D /* main_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main_ViewController.swift; sourceTree = "<group>"; };
+		8325FAF523A9F30100E7944D /* login_SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		8325FA7A23A9BF0C00E7944D /* memoapp */ = {
 			isa = PBXGroup;
 			children = (
+				8325FAF523A9F30100E7944D /* login_SwiftUIView.swift */,
 				8325FA7B23A9BF0C00E7944D /* AppDelegate.swift */,
 				8325FA7D23A9BF0C00E7944D /* SceneDelegate.swift */,
 				8325FA7F23A9BF0C00E7944D /* ContentView.swift */,
@@ -282,6 +285,7 @@
 			files = (
 				8325FA7C23A9BF0C00E7944D /* AppDelegate.swift in Sources */,
 				8325FAF023A9D41F00E7944D /* main_ViewController.swift in Sources */,
+				8325FAF623A9F30100E7944D /* login_SwiftUIView.swift in Sources */,
 				8325FA7E23A9BF0C00E7944D /* SceneDelegate.swift in Sources */,
 				8325FAEE23A9D41F00E7944D /* newuser_ViewController.swift in Sources */,
 				8325FA8023A9BF0C00E7944D /* ContentView.swift in Sources */,
