@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HqW-Wa-rxU">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="e0u-00-1sj">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="ViY-WZ-RMb" customClass="ViewController" customModule="memoapp4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XfX-3e-tK9" userLabel="newpostView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医療従事者さんの手帳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-Q0-bVC">
+                                <rect key="frame" x="71" y="178" width="233" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="bce-Vq-9NW">
+                                <rect key="frame" x="0.0" y="224" width="374" height="156"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" id="xw2-pA-yOl">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログインID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maz-Sv-4gQ">
+                                                <rect key="frame" x="144.5" y="0.0" width="85.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NiH-p3-Zru">
+                                                <rect key="frame" x="87" y="29" width="200" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="IVU-uE-R4O"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="aSw-I3-YOj"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" id="H8f-Fu-F53">
+                                        <rect key="frame" x="0.0" y="98" width="374" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asH-dW-HzB">
+                                                <rect key="frame" x="143.5" y="0.0" width="87" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQm-xg-K78">
+                                                <rect key="frame" x="87" y="29" width="200" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="cEo-nB-J4c"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="tlo-el-HQ3"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="DXK-qN-A1l"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Twu-4A-zUy">
+                                <rect key="frame" x="156" y="418" width="62" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6p-PL-7Pd">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
+                                        <state key="normal" title="ログイン"/>
+                                        <connections>
+                                            <segue destination="0jx-N2-hOD" kind="show" id="XD4-3t-dUh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-Uc-YrK">
+                                        <rect key="frame" x="0.0" y="62" width="62" height="30"/>
+                                        <state key="normal" title="新規登録"/>
+                                        <connections>
+                                            <segue destination="nM4-zL-uTp" kind="show" id="7d4-B8-ZpN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1g9-80-4uF" firstAttribute="trailing" secondItem="Wcq-Q0-bVC" secondAttribute="trailing" constant="71" id="5Hm-p0-yJW"/>
+                            <constraint firstItem="bce-Vq-9NW" firstAttribute="top" secondItem="XfX-3e-tK9" secondAttribute="top" constant="224" id="5rv-XZ-gV8"/>
+                            <constraint firstItem="Twu-4A-zUy" firstAttribute="leading" secondItem="XfX-3e-tK9" secondAttribute="leading" constant="156" id="6NC-Ff-3OV"/>
+                            <constraint firstItem="Wcq-Q0-bVC" firstAttribute="top" secondItem="1g9-80-4uF" secondAttribute="top" constant="134" id="Ngm-lC-9ea"/>
+                            <constraint firstItem="Twu-4A-zUy" firstAttribute="top" secondItem="bce-Vq-9NW" secondAttribute="bottom" constant="38" id="TGD-De-ehb"/>
+                            <constraint firstItem="Wcq-Q0-bVC" firstAttribute="leading" secondItem="1g9-80-4uF" secondAttribute="leading" constant="71" id="VwC-4b-wzm"/>
+                            <constraint firstItem="bce-Vq-9NW" firstAttribute="leading" secondItem="XfX-3e-tK9" secondAttribute="leadingMargin" constant="-16" id="sa8-iY-Gfg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1g9-80-4uF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="czm-a3-vy3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUH-XG-sHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="64.31784107946028"/>
+        </scene>
+        <!--Newuser View Controller-->
+        <scene sceneID="A3Z-2v-ysA">
+            <objects>
+                <viewController id="nM4-zL-uTp" customClass="newuser_ViewController" customModule="memoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8wK-qj-oJT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Flb-Q2-ZCi">
+                                <rect key="frame" x="87.5" y="97" width="200" height="384.5"/>
+                                <subviews>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" id="OY9-El-AkE">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="54.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yij-gq-Nmx">
+                                                <rect key="frame" x="74" y="0.0" width="52" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0b-1R-lcw">
+                                                <rect key="frame" x="0.0" y="20.5" width="200" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="SJ5-ze-Hxt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="4m7-mS-fG5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" id="U2y-yF-XSy">
+                                        <rect key="frame" x="0.0" y="110" width="200" height="54.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログインID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lga-R6-szq">
+                                                <rect key="frame" x="57.5" y="0.0" width="85.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-w0-2cb">
+                                                <rect key="frame" x="0.0" y="20.5" width="200" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="gqu-md-nof"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="HdA-Nu-tBA"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" id="Fd1-eD-eKa">
+                                        <rect key="frame" x="0.0" y="220" width="200" height="54.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwX-a7-Yq5">
+                                                <rect key="frame" x="56.5" y="0.0" width="87" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TzS-yq-xkd">
+                                                <rect key="frame" x="0.0" y="20.5" width="200" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="8KY-Zp-caE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="kPF-Fg-4N8"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" id="3W9-ch-Qxe">
+                                        <rect key="frame" x="0.0" y="330" width="200" height="54.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="病院番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAR-7h-oZK">
+                                                <rect key="frame" x="65.5" y="0.0" width="69.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tq1-dh-Shi">
+                                                <rect key="frame" x="0.0" y="20.5" width="200" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="5wf-2f-k75"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="MHh-Fy-Jzr"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="ihU-I1-JZW"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSB-rl-vRe">
+                                <rect key="frame" x="172" y="489.5" width="31" height="29.5"/>
+                                <state key="normal" title="登録"/>
+                                <connections>
+                                    <segue destination="0jx-N2-hOD" kind="show" id="vdR-Ic-TBl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Flb-Q2-ZCi" firstAttribute="top" secondItem="fqm-zP-vsH" secondAttribute="top" constant="53" id="Bl2-In-iWB"/>
+                            <constraint firstItem="JSB-rl-vRe" firstAttribute="leading" secondItem="fqm-zP-vsH" secondAttribute="leading" constant="172" id="Lti-IT-b2X"/>
+                            <constraint firstItem="fqm-zP-vsH" firstAttribute="bottom" secondItem="JSB-rl-vRe" secondAttribute="bottom" constant="148" id="cSA-5t-2qE"/>
+                            <constraint firstItem="JSB-rl-vRe" firstAttribute="top" secondItem="Flb-Q2-ZCi" secondAttribute="bottom" constant="8" id="uj7-uW-1nu"/>
+                            <constraint firstItem="JSB-rl-vRe" firstAttribute="centerX" secondItem="Flb-Q2-ZCi" secondAttribute="centerX" id="zui-lf-J4N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fqm-zP-vsH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rhd-KG-P28"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bw4-pB-P6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="795"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Tlc-ef-7oW">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="rXk-0H-uLl" customClass="main_ViewController" customModule="memoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aCg-3e-h6P" userLabel="newpostView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ue4-4k-gGj">
+                                <rect key="frame" x="20" y="818" width="374" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDJ-v6-QyD">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
+                                        <state key="normal" title="新規登録"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsU-Zo-xfm">
+                                        <rect key="frame" x="94" y="0.0" width="62" height="30"/>
+                                        <state key="normal" title="投稿一覧"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NC-9Z-5Qd">
+                                        <rect key="frame" x="188" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="ログアウト"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kx3-Y0-UNQ">
+                                        <rect key="frame" x="297" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="カレンダー"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" id="39n-6y-hCB">
+                                <rect key="frame" x="20" y="98" width="374" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalCentering" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RkS-vd-Mx0">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="73.5"/>
+                                        <subviews>
+                                            <stackView contentMode="scaleToFill" spacing="5" id="hat-S0-3JQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="22.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="749" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVA-j2-cDZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22.5" height="22.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22.5" id="21W-9A-W7t"/>
+                                                        </constraints>
+                                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="既読未読ボタン" image="lightbulb" catalog="system"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一般的 名前長さ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGo-hZ-5bt">
+                                                        <rect key="frame" x="27.5" y="0.0" width="256.5" height="22.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4v-WN-CBb">
+                                                        <rect key="frame" x="289" y="0.0" width="69.5" height="22.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="69.5" id="c8H-of-NNx"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="jGo-hZ-5bt" firstAttribute="baseline" secondItem="cVA-j2-cDZ" secondAttribute="baseline" id="z19-Gd-6o0"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="投稿内容の取得 この内容をどれだけ表示するかが気になるのですがどこまでやればスタックビューはちゃんと表示して、どこで折り返してくれるのかが気になるところです" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Atr-8w-fMm">
+                                                <rect key="frame" x="0.0" y="32.5" width="368.5" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="73.5" id="RsA-hu-FM7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalCentering" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="miy-nj-0j7">
+                                        <rect key="frame" x="0.0" y="313.5" width="374" height="73.5"/>
+                                        <subviews>
+                                            <stackView contentMode="scaleToFill" spacing="5" id="vyV-nR-6Kt">
+                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="22.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="749" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDq-dI-Z1d">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22.5" height="22.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22.5" id="sWE-qi-ufa"/>
+                                                        </constraints>
+                                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="既読未読ボタン" image="lightbulb" catalog="system"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一般的 名前長さ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-ac-Hxp">
+                                                        <rect key="frame" x="27.5" y="0.0" width="256.5" height="22.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTu-jP-2fB">
+                                                        <rect key="frame" x="289" y="0.0" width="69.5" height="22.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="69.5" id="oKY-wb-DCW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="gnX-ac-Hxp" firstAttribute="baseline" secondItem="KDq-dI-Z1d" secondAttribute="baseline" id="H19-Kl-eaS"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="投稿内容の取得 この内容をどれだけ表示するかが気になるのですがどこまでやればスタックビューはちゃんと表示して、どこで折り返してくれるのかが気になるところです" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="smK-4o-dHm">
+                                                <rect key="frame" x="0.0" y="32.5" width="368.5" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="73.5" id="PZg-cl-Djc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalCentering" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="frQ-AN-vpz">
+                                        <rect key="frame" x="0.0" y="626.5" width="374" height="73.5"/>
+                                        <subviews>
+                                            <stackView contentMode="scaleToFill" spacing="5" id="jP3-W9-HZT">
+                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="22.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="749" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iv5-H5-Cpu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22.5" height="22.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22.5" id="aQZ-YY-hrF"/>
+                                                        </constraints>
+                                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="既読未読ボタン" image="lightbulb" catalog="system"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一般的 名前長さ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTb-d2-liD">
+                                                        <rect key="frame" x="27.5" y="0.0" width="256.5" height="22.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkd-9H-a7z">
+                                                        <rect key="frame" x="289" y="0.0" width="69.5" height="22.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="69.5" id="5PI-z9-omx"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="CTb-d2-liD" firstAttribute="baseline" secondItem="Iv5-H5-Cpu" secondAttribute="baseline" id="77d-au-w7N"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="投稿内容の取得 この内容をどれだけ表示するかが気になるのですがどこまでやればスタックビューはちゃんと表示して、どこで折り返してくれるのかが気になるところです" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DWB-Uh-f7O">
+                                                <rect key="frame" x="0.0" y="32.5" width="368.5" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="73.5" id="YQJ-50-niI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="n44-Bp-ojx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vbw-50-k5y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dji-Wz-Cvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3832.8000000000002" y="64.31784107946028"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="IZg-Fd-XMn">
+            <objects>
+                <tableViewController storyboardIdentifier="Main" id="M1k-ZQ-GbB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qdr-Gd-sbc" userLabel="postedTable View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="Yc0-Io-osA">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yc0-Io-osA" id="NKy-Ls-Ise">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="42X-Fp-ZPo">
+                                            <rect key="frame" x="20" y="9" width="368.5" height="60"/>
+                                            <subviews>
+                                                <stackView contentMode="scaleToFill" distribution="fillProportionally" spacing="10" id="8GN-ad-ODc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="368.5" height="22.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="749" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbQ-aT-45u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="22.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="CKl-lw-M4P"/>
+                                                            </constraints>
+                                                            <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="既読未読ボタン" image="lightbulb" catalog="system"/>
+                                                        </button>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="frh-9D-Sm5">
+                                                            <rect key="frame" x="40" y="0.0" width="328.5" height="22.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一般的 名前長さ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XQ-Do-QEL">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="22.5"/>
+                                                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eae-7M-TKR">
+                                                                    <rect key="frame" x="174.5" y="0.0" width="154" height="22.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="投稿内容の取得 この内容をどれだけ表示するかが気になるのですがどこまでやればスタックビューはちゃんと表示して、どこで折り返してくれるのかが気になるところです" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="9eG-LW-2by">
+                                                    <rect key="frame" x="0.0" y="26.5" width="368.5" height="33.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="ssY-Zm-Zg2">
+                                <rect key="frame" x="0.0" y="108" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ssY-Zm-Zg2" id="INj-DI-tMb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rY8-6x-7ie">
+                                            <rect key="frame" x="20" y="9" width="368.5" height="60"/>
+                                            <subviews>
+                                                <stackView contentMode="scaleToFill" distribution="fillProportionally" spacing="10" id="4Dr-uU-Pfm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="368.5" height="22.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="749" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-CK-YNI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="22.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="wtq-fi-uNO"/>
+                                                            </constraints>
+                                                            <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="既読未読ボタン" image="lightbulb" catalog="system"/>
+                                                        </button>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yqu-mx-Ob0">
+                                                            <rect key="frame" x="40" y="0.0" width="328.5" height="22.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一般的 名前長さ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-eC-Ypp">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="22.5"/>
+                                                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3d-wM-tVX">
+                                                                    <rect key="frame" x="174.5" y="0.0" width="154" height="22.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="投稿内容の取得 この内容をどれだけ表示するかが気になるのですがどこまでやればスタックビューはちゃんと表示して、どこで折り返してくれるのかが気になるところです" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="bEg-hi-QKn">
+                                                    <rect key="frame" x="0.0" y="26.5" width="368.5" height="33.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="gnE-uc-he3">
+                                <rect key="frame" x="0.0" y="188" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gnE-uc-he3" id="UDe-hb-bRQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Hvg-JT-xyu">
+                                            <rect key="frame" x="20" y="9" width="368.5" height="60"/>
+                                            <subviews>
+                                                <stackView contentMode="scaleToFill" distribution="fillProportionally" spacing="10" id="9wa-4Y-Lfe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="368.5" height="22.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="749" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wze-lO-aJ3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="22.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="kIW-wh-N8w"/>
+                                                            </constraints>
+                                                            <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="既読未読ボタン" image="lightbulb" catalog="system"/>
+                                                        </button>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CNV-bq-EQf">
+                                                            <rect key="frame" x="40" y="0.0" width="328.5" height="22.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一般的 名前長さ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkQ-f2-qYE">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="22.5"/>
+                                                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp5-Zn-bcg">
+                                                                    <rect key="frame" x="174.5" y="0.0" width="154" height="22.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="投稿内容の取得 この内容をどれだけ表示するかが気になるのですがどこまでやればスタックビューはちゃんと表示して、どこで折り返してくれるのかが気になるところです" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="cH8-FE-1DZ">
+                                                    <rect key="frame" x="0.0" y="26.5" width="368.5" height="33.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="BjI-Bh-dfA">
+                                <rect key="frame" x="0.0" y="268" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BjI-Bh-dfA" id="tlw-k2-6Ic">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="pKw-X6-Wqf">
+                                            <rect key="frame" x="20" y="9" width="368.5" height="60"/>
+                                            <subviews>
+                                                <stackView contentMode="scaleToFill" distribution="fillProportionally" spacing="10" id="Ltb-eV-60v">
+                                                    <rect key="frame" x="0.0" y="0.0" width="368.5" height="22.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="749" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dS-3X-8Wj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="22.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="LEA-Mk-2Q7"/>
+                                                            </constraints>
+                                                            <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="既読未読ボタン" image="lightbulb" catalog="system"/>
+                                                        </button>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="I8T-k3-SK8">
+                                                            <rect key="frame" x="40" y="0.0" width="328.5" height="22.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一般的 名前長さ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUh-PM-Iih">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="22.5"/>
+                                                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mud-ho-nvv">
+                                                                    <rect key="frame" x="174.5" y="0.0" width="154" height="22.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="投稿内容の取得 この内容をどれだけ表示するかが気になるのですがどこまでやればスタックビューはちゃんと表示して、どこで折り返してくれるのかが気になるところです" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="Onm-gG-9No">
+                                                    <rect key="frame" x="0.0" y="26.5" width="368.5" height="33.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M1k-ZQ-GbB" id="Js8-zB-4sd"/>
+                            <outlet property="delegate" destination="M1k-ZQ-GbB" id="1Dj-Dm-JD4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="w6y-ud-cam"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAh-ng-Qqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4636" y="75.112443778110944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZUy-nn-Ud7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HqW-Wa-rxU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g38-fc-NLE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ViY-WZ-RMb" kind="relationship" relationship="rootViewController" id="Bsg-0d-4uI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="br8-OJ-KhL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="64.31784107946028"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1GK-VU-VD0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0jx-N2-hOD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ex0-jc-sSO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A4m-F5-OWD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rXk-0H-uLl" kind="relationship" relationship="rootViewController" id="26b-dD-JrU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ktn-Hv-bWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2893.5999999999999" y="64.31784107946028"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lightbulb" catalog="system" width="56" height="64"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XD4-3t-dUh"/>
+    </inferredMetricsTieBreakers>
+</document>

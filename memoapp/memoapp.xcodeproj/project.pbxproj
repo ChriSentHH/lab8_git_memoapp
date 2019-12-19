@@ -7,76 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8325FA7C23A9BF0C00E7944D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FA7B23A9BF0C00E7944D /* AppDelegate.swift */; };
-		8325FA7E23A9BF0C00E7944D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FA7D23A9BF0C00E7944D /* SceneDelegate.swift */; };
-		8325FA8023A9BF0C00E7944D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FA7F23A9BF0C00E7944D /* ContentView.swift */; };
-		8325FA8223A9BF0E00E7944D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8325FA8123A9BF0E00E7944D /* Assets.xcassets */; };
-		8325FA8523A9BF0E00E7944D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8325FA8423A9BF0E00E7944D /* Preview Assets.xcassets */; };
-		8325FA8823A9BF0E00E7944D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8325FA8623A9BF0E00E7944D /* LaunchScreen.storyboard */; };
-		8325FA9323A9BF0F00E7944D /* memoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FA9223A9BF0F00E7944D /* memoappTests.swift */; };
-		8325FA9E23A9BF0F00E7944D /* memoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FA9D23A9BF0F00E7944D /* memoappUITests.swift */; };
-		8325FAEA23A9D40500E7944D /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8325FAE923A9D40500E7944D /* main.storyboard */; };
-		8325FAEE23A9D41F00E7944D /* newuser_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FAEB23A9D41F00E7944D /* newuser_ViewController.swift */; };
-		8325FAEF23A9D41F00E7944D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FAEC23A9D41F00E7944D /* SwiftUIView.swift */; };
-		8325FAF023A9D41F00E7944D /* main_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FAED23A9D41F00E7944D /* main_ViewController.swift */; };
-		8325FAF623A9F30100E7944D /* login_SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325FAF523A9F30100E7944D /* login_SwiftUIView.swift */; };
+		834F948023AB239F00816EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F947F23AB239F00816EAD /* AppDelegate.swift */; };
+		834F948223AB239F00816EAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F948123AB239F00816EAD /* SceneDelegate.swift */; };
+		834F948423AB239F00816EAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F948323AB239F00816EAD /* ViewController.swift */; };
+		834F948723AB239F00816EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F948523AB239F00816EAD /* Main.storyboard */; };
+		834F948923AB23A100816EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834F948823AB23A100816EAD /* Assets.xcassets */; };
+		834F948C23AB23A100816EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F948A23AB23A100816EAD /* LaunchScreen.storyboard */; };
+		834F949723AB23A100816EAD /* memoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F949623AB23A100816EAD /* memoappTests.swift */; };
+		834F94A223AB23A100816EAD /* memoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F94A123AB23A100816EAD /* memoappUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8325FA8F23A9BF0F00E7944D /* PBXContainerItemProxy */ = {
+		834F949323AB23A100816EAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8325FA7023A9BF0C00E7944D /* Project object */;
+			containerPortal = 834F947423AB239F00816EAD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8325FA7723A9BF0C00E7944D;
+			remoteGlobalIDString = 834F947B23AB239F00816EAD;
 			remoteInfo = memoapp;
 		};
-		8325FA9A23A9BF0F00E7944D /* PBXContainerItemProxy */ = {
+		834F949E23AB23A100816EAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8325FA7023A9BF0C00E7944D /* Project object */;
+			containerPortal = 834F947423AB239F00816EAD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8325FA7723A9BF0C00E7944D;
+			remoteGlobalIDString = 834F947B23AB239F00816EAD;
 			remoteInfo = memoapp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8325FA7823A9BF0C00E7944D /* memoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8325FA7B23A9BF0C00E7944D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8325FA7D23A9BF0C00E7944D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8325FA7F23A9BF0C00E7944D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8325FA8123A9BF0E00E7944D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8325FA8423A9BF0E00E7944D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8325FA8723A9BF0E00E7944D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8325FA8923A9BF0E00E7944D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8325FA8E23A9BF0F00E7944D /* memoappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memoappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8325FA9223A9BF0F00E7944D /* memoappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoappTests.swift; sourceTree = "<group>"; };
-		8325FA9423A9BF0F00E7944D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8325FA9923A9BF0F00E7944D /* memoappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memoappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8325FA9D23A9BF0F00E7944D /* memoappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoappUITests.swift; sourceTree = "<group>"; };
-		8325FA9F23A9BF0F00E7944D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8325FAE923A9D40500E7944D /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
-		8325FAEB23A9D41F00E7944D /* newuser_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newuser_ViewController.swift; sourceTree = "<group>"; };
-		8325FAEC23A9D41F00E7944D /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		8325FAED23A9D41F00E7944D /* main_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main_ViewController.swift; sourceTree = "<group>"; };
-		8325FAF523A9F30100E7944D /* login_SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_SwiftUIView.swift; sourceTree = "<group>"; };
+		834F947C23AB239F00816EAD /* memoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834F947F23AB239F00816EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		834F948123AB239F00816EAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		834F948323AB239F00816EAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		834F948623AB239F00816EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		834F948823AB23A100816EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		834F948B23AB23A100816EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		834F948D23AB23A100816EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834F949223AB23A100816EAD /* memoappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memoappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834F949623AB23A100816EAD /* memoappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoappTests.swift; sourceTree = "<group>"; };
+		834F949823AB23A100816EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834F949D23AB23A100816EAD /* memoappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memoappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834F94A123AB23A100816EAD /* memoappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoappUITests.swift; sourceTree = "<group>"; };
+		834F94A323AB23A100816EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8325FA7523A9BF0C00E7944D /* Frameworks */ = {
+		834F947923AB239F00816EAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8325FA8B23A9BF0F00E7944D /* Frameworks */ = {
+		834F948F23AB23A100816EAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8325FA9623A9BF0F00E7944D /* Frameworks */ = {
+		834F949A23AB23A100816EAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,67 +76,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8325FA6F23A9BF0C00E7944D = {
+		834F947323AB239F00816EAD = {
 			isa = PBXGroup;
 			children = (
-				8325FA7A23A9BF0C00E7944D /* memoapp */,
-				8325FA9123A9BF0F00E7944D /* memoappTests */,
-				8325FA9C23A9BF0F00E7944D /* memoappUITests */,
-				8325FA7923A9BF0C00E7944D /* Products */,
+				834F947E23AB239F00816EAD /* memoapp */,
+				834F949523AB23A100816EAD /* memoappTests */,
+				834F94A023AB23A100816EAD /* memoappUITests */,
+				834F947D23AB239F00816EAD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8325FA7923A9BF0C00E7944D /* Products */ = {
+		834F947D23AB239F00816EAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8325FA7823A9BF0C00E7944D /* memoapp.app */,
-				8325FA8E23A9BF0F00E7944D /* memoappTests.xctest */,
-				8325FA9923A9BF0F00E7944D /* memoappUITests.xctest */,
+				834F947C23AB239F00816EAD /* memoapp.app */,
+				834F949223AB23A100816EAD /* memoappTests.xctest */,
+				834F949D23AB23A100816EAD /* memoappUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8325FA7A23A9BF0C00E7944D /* memoapp */ = {
+		834F947E23AB239F00816EAD /* memoapp */ = {
 			isa = PBXGroup;
 			children = (
-				8325FAF523A9F30100E7944D /* login_SwiftUIView.swift */,
-				8325FA7B23A9BF0C00E7944D /* AppDelegate.swift */,
-				8325FA7D23A9BF0C00E7944D /* SceneDelegate.swift */,
-				8325FA7F23A9BF0C00E7944D /* ContentView.swift */,
-				8325FA8123A9BF0E00E7944D /* Assets.xcassets */,
-				8325FA8623A9BF0E00E7944D /* LaunchScreen.storyboard */,
-				8325FA8923A9BF0E00E7944D /* Info.plist */,
-				8325FAE923A9D40500E7944D /* main.storyboard */,
-				8325FAED23A9D41F00E7944D /* main_ViewController.swift */,
-				8325FAEB23A9D41F00E7944D /* newuser_ViewController.swift */,
-				8325FAEC23A9D41F00E7944D /* SwiftUIView.swift */,
-				8325FA8323A9BF0E00E7944D /* Preview Content */,
+				834F947F23AB239F00816EAD /* AppDelegate.swift */,
+				834F948123AB239F00816EAD /* SceneDelegate.swift */,
+				834F948323AB239F00816EAD /* ViewController.swift */,
+				834F948523AB239F00816EAD /* Main.storyboard */,
+				834F948823AB23A100816EAD /* Assets.xcassets */,
+				834F948A23AB23A100816EAD /* LaunchScreen.storyboard */,
+				834F948D23AB23A100816EAD /* Info.plist */,
 			);
 			path = memoapp;
 			sourceTree = "<group>";
 		};
-		8325FA8323A9BF0E00E7944D /* Preview Content */ = {
+		834F949523AB23A100816EAD /* memoappTests */ = {
 			isa = PBXGroup;
 			children = (
-				8325FA8423A9BF0E00E7944D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		8325FA9123A9BF0F00E7944D /* memoappTests */ = {
-			isa = PBXGroup;
-			children = (
-				8325FA9223A9BF0F00E7944D /* memoappTests.swift */,
-				8325FA9423A9BF0F00E7944D /* Info.plist */,
+				834F949623AB23A100816EAD /* memoappTests.swift */,
+				834F949823AB23A100816EAD /* Info.plist */,
 			);
 			path = memoappTests;
 			sourceTree = "<group>";
 		};
-		8325FA9C23A9BF0F00E7944D /* memoappUITests */ = {
+		834F94A023AB23A100816EAD /* memoappUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8325FA9D23A9BF0F00E7944D /* memoappUITests.swift */,
-				8325FA9F23A9BF0F00E7944D /* Info.plist */,
+				834F94A123AB23A100816EAD /* memoappUITests.swift */,
+				834F94A323AB23A100816EAD /* Info.plist */,
 			);
 			path = memoappUITests;
 			sourceTree = "<group>";
@@ -154,13 +131,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8325FA7723A9BF0C00E7944D /* memoapp */ = {
+		834F947B23AB239F00816EAD /* memoapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8325FAA223A9BF0F00E7944D /* Build configuration list for PBXNativeTarget "memoapp" */;
+			buildConfigurationList = 834F94A623AB23A100816EAD /* Build configuration list for PBXNativeTarget "memoapp" */;
 			buildPhases = (
-				8325FA7423A9BF0C00E7944D /* Sources */,
-				8325FA7523A9BF0C00E7944D /* Frameworks */,
-				8325FA7623A9BF0C00E7944D /* Resources */,
+				834F947823AB239F00816EAD /* Sources */,
+				834F947923AB239F00816EAD /* Frameworks */,
+				834F947A23AB239F00816EAD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -168,69 +145,69 @@
 			);
 			name = memoapp;
 			productName = memoapp;
-			productReference = 8325FA7823A9BF0C00E7944D /* memoapp.app */;
+			productReference = 834F947C23AB239F00816EAD /* memoapp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8325FA8D23A9BF0F00E7944D /* memoappTests */ = {
+		834F949123AB23A100816EAD /* memoappTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8325FAA523A9BF0F00E7944D /* Build configuration list for PBXNativeTarget "memoappTests" */;
+			buildConfigurationList = 834F94A923AB23A100816EAD /* Build configuration list for PBXNativeTarget "memoappTests" */;
 			buildPhases = (
-				8325FA8A23A9BF0F00E7944D /* Sources */,
-				8325FA8B23A9BF0F00E7944D /* Frameworks */,
-				8325FA8C23A9BF0F00E7944D /* Resources */,
+				834F948E23AB23A100816EAD /* Sources */,
+				834F948F23AB23A100816EAD /* Frameworks */,
+				834F949023AB23A100816EAD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8325FA9023A9BF0F00E7944D /* PBXTargetDependency */,
+				834F949423AB23A100816EAD /* PBXTargetDependency */,
 			);
 			name = memoappTests;
 			productName = memoappTests;
-			productReference = 8325FA8E23A9BF0F00E7944D /* memoappTests.xctest */;
+			productReference = 834F949223AB23A100816EAD /* memoappTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8325FA9823A9BF0F00E7944D /* memoappUITests */ = {
+		834F949C23AB23A100816EAD /* memoappUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8325FAA823A9BF0F00E7944D /* Build configuration list for PBXNativeTarget "memoappUITests" */;
+			buildConfigurationList = 834F94AC23AB23A100816EAD /* Build configuration list for PBXNativeTarget "memoappUITests" */;
 			buildPhases = (
-				8325FA9523A9BF0F00E7944D /* Sources */,
-				8325FA9623A9BF0F00E7944D /* Frameworks */,
-				8325FA9723A9BF0F00E7944D /* Resources */,
+				834F949923AB23A100816EAD /* Sources */,
+				834F949A23AB23A100816EAD /* Frameworks */,
+				834F949B23AB23A100816EAD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8325FA9B23A9BF0F00E7944D /* PBXTargetDependency */,
+				834F949F23AB23A100816EAD /* PBXTargetDependency */,
 			);
 			name = memoappUITests;
 			productName = memoappUITests;
-			productReference = 8325FA9923A9BF0F00E7944D /* memoappUITests.xctest */;
+			productReference = 834F949D23AB23A100816EAD /* memoappUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8325FA7023A9BF0C00E7944D /* Project object */ = {
+		834F947423AB239F00816EAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = chris.nakamu;
 				TargetAttributes = {
-					8325FA7723A9BF0C00E7944D = {
+					834F947B23AB239F00816EAD = {
 						CreatedOnToolsVersion = 11.3;
 					};
-					8325FA8D23A9BF0F00E7944D = {
+					834F949123AB23A100816EAD = {
 						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 8325FA7723A9BF0C00E7944D;
+						TestTargetID = 834F947B23AB239F00816EAD;
 					};
-					8325FA9823A9BF0F00E7944D = {
+					834F949C23AB23A100816EAD = {
 						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 8325FA7723A9BF0C00E7944D;
+						TestTargetID = 834F947B23AB239F00816EAD;
 					};
 				};
 			};
-			buildConfigurationList = 8325FA7323A9BF0C00E7944D /* Build configuration list for PBXProject "memoapp" */;
+			buildConfigurationList = 834F947723AB239F00816EAD /* Build configuration list for PBXProject "memoapp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,38 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 8325FA6F23A9BF0C00E7944D;
-			productRefGroup = 8325FA7923A9BF0C00E7944D /* Products */;
+			mainGroup = 834F947323AB239F00816EAD;
+			productRefGroup = 834F947D23AB239F00816EAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8325FA7723A9BF0C00E7944D /* memoapp */,
-				8325FA8D23A9BF0F00E7944D /* memoappTests */,
-				8325FA9823A9BF0F00E7944D /* memoappUITests */,
+				834F947B23AB239F00816EAD /* memoapp */,
+				834F949123AB23A100816EAD /* memoappTests */,
+				834F949C23AB23A100816EAD /* memoappUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8325FA7623A9BF0C00E7944D /* Resources */ = {
+		834F947A23AB239F00816EAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8325FA8823A9BF0E00E7944D /* LaunchScreen.storyboard in Resources */,
-				8325FA8523A9BF0E00E7944D /* Preview Assets.xcassets in Resources */,
-				8325FA8223A9BF0E00E7944D /* Assets.xcassets in Resources */,
-				8325FAEA23A9D40500E7944D /* main.storyboard in Resources */,
+				834F948C23AB23A100816EAD /* LaunchScreen.storyboard in Resources */,
+				834F948923AB23A100816EAD /* Assets.xcassets in Resources */,
+				834F948723AB239F00816EAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8325FA8C23A9BF0F00E7944D /* Resources */ = {
+		834F949023AB23A100816EAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8325FA9723A9BF0F00E7944D /* Resources */ = {
+		834F949B23AB23A100816EAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,56 +255,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8325FA7423A9BF0C00E7944D /* Sources */ = {
+		834F947823AB239F00816EAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8325FA7C23A9BF0C00E7944D /* AppDelegate.swift in Sources */,
-				8325FAF023A9D41F00E7944D /* main_ViewController.swift in Sources */,
-				8325FAF623A9F30100E7944D /* login_SwiftUIView.swift in Sources */,
-				8325FA7E23A9BF0C00E7944D /* SceneDelegate.swift in Sources */,
-				8325FAEE23A9D41F00E7944D /* newuser_ViewController.swift in Sources */,
-				8325FA8023A9BF0C00E7944D /* ContentView.swift in Sources */,
-				8325FAEF23A9D41F00E7944D /* SwiftUIView.swift in Sources */,
+				834F948423AB239F00816EAD /* ViewController.swift in Sources */,
+				834F948023AB239F00816EAD /* AppDelegate.swift in Sources */,
+				834F948223AB239F00816EAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8325FA8A23A9BF0F00E7944D /* Sources */ = {
+		834F948E23AB23A100816EAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8325FA9323A9BF0F00E7944D /* memoappTests.swift in Sources */,
+				834F949723AB23A100816EAD /* memoappTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8325FA9523A9BF0F00E7944D /* Sources */ = {
+		834F949923AB23A100816EAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8325FA9E23A9BF0F00E7944D /* memoappUITests.swift in Sources */,
+				834F94A223AB23A100816EAD /* memoappUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8325FA9023A9BF0F00E7944D /* PBXTargetDependency */ = {
+		834F949423AB23A100816EAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8325FA7723A9BF0C00E7944D /* memoapp */;
-			targetProxy = 8325FA8F23A9BF0F00E7944D /* PBXContainerItemProxy */;
+			target = 834F947B23AB239F00816EAD /* memoapp */;
+			targetProxy = 834F949323AB23A100816EAD /* PBXContainerItemProxy */;
 		};
-		8325FA9B23A9BF0F00E7944D /* PBXTargetDependency */ = {
+		834F949F23AB23A100816EAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8325FA7723A9BF0C00E7944D /* memoapp */;
-			targetProxy = 8325FA9A23A9BF0F00E7944D /* PBXContainerItemProxy */;
+			target = 834F947B23AB239F00816EAD /* memoapp */;
+			targetProxy = 834F949E23AB23A100816EAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8325FA8623A9BF0E00E7944D /* LaunchScreen.storyboard */ = {
+		834F948523AB239F00816EAD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8325FA8723A9BF0E00E7944D /* Base */,
+				834F948623AB239F00816EAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		834F948A23AB23A100816EAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834F948B23AB23A100816EAD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -336,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8325FAA023A9BF0F00E7944D /* Debug */ = {
+		834F94A423AB23A100816EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -396,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		8325FAA123A9BF0F00E7944D /* Release */ = {
+		834F94A523AB23A100816EAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -450,13 +430,12 @@
 			};
 			name = Release;
 		};
-		8325FAA323A9BF0F00E7944D /* Debug */ = {
+		834F94A723AB23A100816EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"memoapp/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
+				DEVELOPMENT_TEAM = LKFNJR36GC;
 				INFOPLIST_FILE = memoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,13 +448,12 @@
 			};
 			name = Debug;
 		};
-		8325FAA423A9BF0F00E7944D /* Release */ = {
+		834F94A823AB23A100816EAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"memoapp/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
+				DEVELOPMENT_TEAM = LKFNJR36GC;
 				INFOPLIST_FILE = memoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,12 +466,13 @@
 			};
 			name = Release;
 		};
-		8325FAA623A9BF0F00E7944D /* Debug */ = {
+		834F94AA23AB23A100816EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LKFNJR36GC;
 				INFOPLIST_FILE = memoappTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,12 +488,13 @@
 			};
 			name = Debug;
 		};
-		8325FAA723A9BF0F00E7944D /* Release */ = {
+		834F94AB23AB23A100816EAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LKFNJR36GC;
 				INFOPLIST_FILE = memoappTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,11 +510,12 @@
 			};
 			name = Release;
 		};
-		8325FAA923A9BF0F00E7944D /* Debug */ = {
+		834F94AD23AB23A100816EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LKFNJR36GC;
 				INFOPLIST_FILE = memoappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,11 +530,12 @@
 			};
 			name = Debug;
 		};
-		8325FAAA23A9BF0F00E7944D /* Release */ = {
+		834F94AE23AB23A100816EAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LKFNJR36GC;
 				INFOPLIST_FILE = memoappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,43 +553,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8325FA7323A9BF0C00E7944D /* Build configuration list for PBXProject "memoapp" */ = {
+		834F947723AB239F00816EAD /* Build configuration list for PBXProject "memoapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8325FAA023A9BF0F00E7944D /* Debug */,
-				8325FAA123A9BF0F00E7944D /* Release */,
+				834F94A423AB23A100816EAD /* Debug */,
+				834F94A523AB23A100816EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8325FAA223A9BF0F00E7944D /* Build configuration list for PBXNativeTarget "memoapp" */ = {
+		834F94A623AB23A100816EAD /* Build configuration list for PBXNativeTarget "memoapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8325FAA323A9BF0F00E7944D /* Debug */,
-				8325FAA423A9BF0F00E7944D /* Release */,
+				834F94A723AB23A100816EAD /* Debug */,
+				834F94A823AB23A100816EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8325FAA523A9BF0F00E7944D /* Build configuration list for PBXNativeTarget "memoappTests" */ = {
+		834F94A923AB23A100816EAD /* Build configuration list for PBXNativeTarget "memoappTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8325FAA623A9BF0F00E7944D /* Debug */,
-				8325FAA723A9BF0F00E7944D /* Release */,
+				834F94AA23AB23A100816EAD /* Debug */,
+				834F94AB23AB23A100816EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8325FAA823A9BF0F00E7944D /* Build configuration list for PBXNativeTarget "memoappUITests" */ = {
+		834F94AC23AB23A100816EAD /* Build configuration list for PBXNativeTarget "memoappUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8325FAA923A9BF0F00E7944D /* Debug */,
-				8325FAAA23A9BF0F00E7944D /* Release */,
+				834F94AD23AB23A100816EAD /* Debug */,
+				834F94AE23AB23A100816EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8325FA7023A9BF0C00E7944D /* Project object */;
+	rootObject = 834F947423AB239F00816EAD /* Project object */;
 }
