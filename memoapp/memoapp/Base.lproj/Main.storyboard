@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="e0u-00-1sj">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="ViY-WZ-RMb" customClass="ViewController" customModule="memoapp4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="ViY-WZ-RMb" customClass="ViewController" customModule="memoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XfX-3e-tK9" userLabel="newpostView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
                                         <state key="normal" title="ログイン"/>
                                         <connections>
-                                            <segue destination="0jx-N2-hOD" kind="show" id="XD4-3t-dUh"/>
+                                            <segue destination="gkZ-UC-Bzn" kind="show" id="9I1-9t-NHu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-Uc-YrK">
@@ -213,7 +213,7 @@
                                 <rect key="frame" x="172" y="489.5" width="31" height="29.5"/>
                                 <state key="normal" title="登録"/>
                                 <connections>
-                                    <segue destination="0jx-N2-hOD" kind="show" id="vdR-Ic-TBl"/>
+                                    <segue destination="gkZ-UC-Bzn" kind="show" id="kmI-27-yGd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -233,10 +233,26 @@
             </objects>
             <point key="canvasLocation" x="1900" y="795"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Calendar-->
+        <scene sceneID="ZZF-nC-Yvd">
+            <objects>
+                <viewController restorationIdentifier="Calendar" id="gQm-Ip-Lkl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n5Z-jV-UeK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2Fd-Eq-xor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="RfM-ZC-grB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2to-AP-AN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4999" y="834"/>
+        </scene>
+        <!--新規投稿-->
         <scene sceneID="Tlc-ef-7oW">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="rXk-0H-uLl" customClass="main_ViewController" customModule="memoapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="NewPost" autoresizesArchivedViewToFullSize="NO" id="rXk-0H-uLl" customClass="main_ViewController" customModule="memoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aCg-3e-h6P" userLabel="newpostView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -428,16 +444,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="n44-Bp-ojx"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="新規投稿" image="pencil" catalog="system" id="DoT-mF-kQa"/>
                     <navigationItem key="navigationItem" id="Vbw-50-k5y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dji-Wz-Cvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3832.8000000000002" y="64.31784107946028"/>
+            <point key="canvasLocation" x="4998" y="-655"/>
         </scene>
-        <!--Table View Controller-->
+        <!--連絡一覧-->
         <scene sceneID="IZg-Fd-XMn">
             <objects>
-                <tableViewController storyboardIdentifier="Main" id="M1k-ZQ-GbB" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="PostedMemo" id="M1k-ZQ-GbB" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qdr-Gd-sbc" userLabel="postedTable View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -681,11 +698,12 @@
                             <outlet property="delegate" destination="M1k-ZQ-GbB" id="1Dj-Dm-JD4"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="連絡一覧" image="folder.fill" catalog="system" id="iCA-yq-ROh"/>
                     <navigationItem key="navigationItem" id="w6y-ud-cam"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAh-ng-Qqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4636" y="75.112443778110944"/>
+            <point key="canvasLocation" x="4999.1999999999998" y="63.418290854572717"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZUy-nn-Ud7">
@@ -706,29 +724,52 @@
             <point key="canvasLocation" x="960.79999999999995" y="64.31784107946028"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="1GK-VU-VD0">
+        <scene sceneID="mkb-O7-g28">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0jx-N2-hOD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gkZ-UC-Bzn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="ex0-jc-sSO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A4m-F5-OWD">
+                    <navigationItem key="navigationItem" id="cmg-Wa-q2v"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kxW-6u-RDZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="rXk-0H-uLl" kind="relationship" relationship="rootViewController" id="26b-dD-JrU"/>
+                        <segue destination="eaJ-NM-bze" kind="relationship" relationship="rootViewController" id="5Sf-9R-lpH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ktn-Hv-bWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iop-ib-wqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2893.5999999999999" y="64.31784107946028"/>
+            <point key="canvasLocation" x="3120.8000000000002" y="63.418290854572717"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jsV-6V-0ha">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eaJ-NM-bze" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="XBJ-WQ-i0s"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q8A-UU-DGK">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="M1k-ZQ-GbB" kind="relationship" relationship="viewControllers" id="Cwh-W4-uly"/>
+                        <segue destination="rXk-0H-uLl" kind="relationship" relationship="viewControllers" id="jUJ-Vi-VkB"/>
+                        <segue destination="gQm-Ip-Lkl" kind="relationship" relationship="viewControllers" id="jZV-47-GIT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86V-7q-IuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4060" y="63.418290854572717"/>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="folder.fill" catalog="system" width="64" height="46"/>
         <image name="lightbulb" catalog="system" width="56" height="64"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XD4-3t-dUh"/>
+        <segue reference="kmI-27-yGd"/>
     </inferredMetricsTieBreakers>
 </document>
