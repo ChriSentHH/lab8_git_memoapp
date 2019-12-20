@@ -80,7 +80,7 @@
                                         <state key="normal" title="ログイン"/>
                                         <connections>
                                             <action selector="login:" destination="ViY-WZ-RMb" eventType="touchUpInside" id="Vq8-aV-VxA"/>
-                                            <segue destination="U7I-sP-kdg" kind="show" id="p6a-HR-OTj"/>
+                                            <segue destination="U7I-sP-kdg" kind="show" id="cE1-P4-iqM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-Uc-YrK">
@@ -243,6 +243,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mHC-J5-wP3">
+                                <rect key="frame" x="132" y="233" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFw-JQ-TdF">
                                 <rect key="frame" x="296" y="396" width="63" height="32"/>
                                 <constraints>
@@ -268,8 +272,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF2-hH-A5e" customClass="BackgroundHighlightedButton" customModule="memoapp" customModuleProvider="target">
-                                <rect key="frame" x="226" y="396" width="62" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF2-hH-A5e">
+                                <rect key="frame" x="225" y="396" width="63" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="06g-b5-uQG"/>
+                                </constraints>
                                 <state key="normal" title="投稿する"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
@@ -296,7 +303,9 @@
                             <constraint firstItem="aPx-8y-QMz" firstAttribute="top" secondItem="aCg-3e-h6P" secondAttribute="top" constant="88" id="VXs-9I-vOu"/>
                             <constraint firstItem="PFw-JQ-TdF" firstAttribute="baseline" secondItem="jF2-hH-A5e" secondAttribute="firstBaseline" id="XDj-1B-jZX"/>
                             <constraint firstItem="PFw-JQ-TdF" firstAttribute="top" secondItem="jF2-hH-A5e" secondAttribute="top" id="fJw-fw-36E"/>
+                            <constraint firstItem="PFw-JQ-TdF" firstAttribute="top" secondItem="aPx-8y-QMz" secondAttribute="bottom" constant="8" id="kO9-MN-FoR"/>
                             <constraint firstItem="PFw-JQ-TdF" firstAttribute="leading" secondItem="jF2-hH-A5e" secondAttribute="trailing" constant="8" id="kvz-QG-3Hn"/>
+                            <constraint firstItem="jF2-hH-A5e" firstAttribute="top" secondItem="aPx-8y-QMz" secondAttribute="bottom" constant="8" id="qNT-HZ-e4U"/>
                             <constraint firstItem="aPx-8y-QMz" firstAttribute="top" secondItem="KHv-WW-jgE" secondAttribute="bottom" constant="8" id="yQJ-ZI-82g"/>
                             <constraint firstItem="KHv-WW-jgE" firstAttribute="leading" secondItem="n44-Bp-ojx" secondAttribute="leading" constant="89" id="z2r-Eg-jja"/>
                         </constraints>
@@ -309,7 +318,7 @@
             </objects>
             <point key="canvasLocation" x="4997.6000000000004" y="-655.32233883058473"/>
         </scene>
-        <!--Item-->
+        <!--連絡一覧-->
         <scene sceneID="IZg-Fd-XMn">
             <objects>
                 <tableViewController restorationIdentifier="PostedMemo" id="M1k-ZQ-GbB" sceneMemberID="viewController">
@@ -317,9 +326,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" id="jLQ-t3-mUa">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostedNote" rowHeight="80" id="Yc0-Io-osA">
-                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="Yc0-Io-osA">
+                                <rect key="frame" x="0.0" y="72" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yc0-Io-osA" id="NKy-Ls-Ise">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -332,14 +346,14 @@
                             <outlet property="delegate" destination="M1k-ZQ-GbB" id="iGf-Jz-zcF"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="xQY-3O-3if"/>
+                    <tabBarItem key="tabBarItem" title="連絡一覧" image="folder.fill" catalog="system" id="xQY-3O-3if"/>
                     <navigationItem key="navigationItem" id="w6y-ud-cam"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAh-ng-Qqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4998" y="64"/>
         </scene>
-        <!--Calendar-->
+        <!--カレンダー-->
         <scene sceneID="J9X-0Y-qA6">
             <objects>
                 <collectionViewController id="IKt-Va-iec" sceneMemberID="viewController">
@@ -384,7 +398,7 @@
                             <outlet property="delegate" destination="IKt-Va-iec" id="bdn-dK-rfS"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" id="0Kj-DD-OTK"/>
+                    <tabBarItem key="tabBarItem" title="カレンダー" image="calendar" catalog="system" id="0Kj-DD-OTK"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INQ-Rf-9Jo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -450,11 +464,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="64" height="52"/>
+        <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="folder.fill" catalog="system" width="64" height="46"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X2y-tF-ZSs"/>
+        <segue reference="cE1-P4-iqM"/>
     </inferredMetricsTieBreakers>
 </document>
