@@ -15,6 +15,8 @@
 		834F948C23AB23A100816EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F948A23AB23A100816EAD /* LaunchScreen.storyboard */; };
 		834F949723AB23A100816EAD /* memoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F949623AB23A100816EAD /* memoappTests.swift */; };
 		834F94A223AB23A100816EAD /* memoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F94A123AB23A100816EAD /* memoappUITests.swift */; };
+		834F94C223AB68D300816EAD /* buttoncontral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F94C123AB68D300816EAD /* buttoncontral.swift */; };
+		834F94C423AB705F00816EAD /* memo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F94C323AB705E00816EAD /* memo_ViewController.swift */; };
 		D0ACBC1F9B3C462F9F7AC388 /* Pods_memoapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D364D8CD1425523F40ED89DC /* Pods_memoapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		834F949D23AB23A100816EAD /* memoappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memoappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834F94A123AB23A100816EAD /* memoappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoappUITests.swift; sourceTree = "<group>"; };
 		834F94A323AB23A100816EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834F94C123AB68D300816EAD /* buttoncontral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttoncontral.swift; sourceTree = "<group>"; };
+		834F94C323AB705E00816EAD /* memo_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memo_ViewController.swift; sourceTree = "<group>"; };
 		D364D8CD1425523F40ED89DC /* Pods_memoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2558045F5DFFF74E785A01 /* Pods-memoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoapp.debug.xcconfig"; path = "Target Support Files/Pods-memoapp/Pods-memoapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +125,8 @@
 				834F948823AB23A100816EAD /* Assets.xcassets */,
 				834F948A23AB23A100816EAD /* LaunchScreen.storyboard */,
 				834F948D23AB23A100816EAD /* Info.plist */,
+				834F94C123AB68D300816EAD /* buttoncontral.swift */,
+				834F94C323AB705E00816EAD /* memo_ViewController.swift */,
 			);
 			path = memoapp;
 			sourceTree = "<group>";
@@ -328,7 +334,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				834F948423AB239F00816EAD /* ViewController.swift in Sources */,
+				834F94C223AB68D300816EAD /* buttoncontral.swift in Sources */,
 				834F948023AB239F00816EAD /* AppDelegate.swift in Sources */,
+				834F94C423AB705F00816EAD /* memo_ViewController.swift in Sources */,
 				834F948223AB239F00816EAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
